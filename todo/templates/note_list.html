@@ -5,9 +5,13 @@
 
 {% block content %}
   <h1>Hello, Alex</h1>
+      <div class="row">
   {% for note in notes %}
+      <div class="col-4">
     {% include "note.html" %}
+      </div>
   {% endfor %}
+      </div>
    {% include "add_note.html" %}
 {% endblock %}
 
